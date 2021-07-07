@@ -1,0 +1,6 @@
+framework module Pods_EvaluacionPokemon {
+  umbrella header "Pods-EvaluacionPokemon-umbrella.h"
+
+  export *
+  module * { export * }
+}

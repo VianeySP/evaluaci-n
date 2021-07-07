@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Log In View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LogIn" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="LogInViewController" customModule="EvaluacionPokemon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ihr-vl-5F9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logInPokemon" translatesAutoresizingMaskIntoConstraints="NO" id="MqI-sb-m5K">
+                                        <rect key="frame" x="87" y="92" width="240" height="170"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="170" id="v8S-2U-ako"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Correo" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2RU-1b-e5o">
+                                        <rect key="frame" x="64" y="342" width="286" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="ces-Zd-x1V"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contraseña" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E8J-69-3vp">
+                                        <rect key="frame" x="64" y="427" width="286" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="6eZ-5t-hii"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIZ-Mp-wcB">
+                                        <rect key="frame" x="64" y="801" width="286" height="45"/>
+                                        <color key="backgroundColor" red="0.25967907909999999" green="0.42380750179999999" blue="0.69919472930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="fmg-sO-sPp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="24"/>
+                                        <state key="normal" title="Iniciar Sesion">
+                                            <color key="titleColor" red="0.98741120100000002" green="0.81366360189999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="2RU-1b-e5o" firstAttribute="leading" secondItem="Ihr-vl-5F9" secondAttribute="leading" constant="64" id="0Tc-fi-XaI"/>
+                                    <constraint firstItem="MqI-sb-m5K" firstAttribute="leading" secondItem="Ihr-vl-5F9" secondAttribute="leading" constant="87" id="ILz-XI-ISH"/>
+                                    <constraint firstAttribute="trailing" secondItem="2RU-1b-e5o" secondAttribute="trailing" constant="64" id="MJN-gw-lHI"/>
+                                    <constraint firstAttribute="trailing" secondItem="GIZ-Mp-wcB" secondAttribute="trailing" constant="64" id="SBz-Bo-mkv"/>
+                                    <constraint firstAttribute="bottom" secondItem="GIZ-Mp-wcB" secondAttribute="bottom" constant="50" id="YOD-9H-DGX"/>
+                                    <constraint firstItem="MqI-sb-m5K" firstAttribute="top" secondItem="Ihr-vl-5F9" secondAttribute="top" constant="92" id="c43-8g-YqT"/>
+                                    <constraint firstAttribute="trailing" secondItem="MqI-sb-m5K" secondAttribute="trailing" constant="87" id="gWF-W2-mPc"/>
+                                    <constraint firstAttribute="trailing" secondItem="E8J-69-3vp" secondAttribute="trailing" constant="64" id="kJO-Vh-eJI"/>
+                                    <constraint firstItem="E8J-69-3vp" firstAttribute="leading" secondItem="Ihr-vl-5F9" secondAttribute="leading" constant="64" id="ml7-0h-RyX"/>
+                                    <constraint firstItem="E8J-69-3vp" firstAttribute="top" secondItem="2RU-1b-e5o" secondAttribute="bottom" constant="40" id="rxJ-Zl-lHl"/>
+                                    <constraint firstItem="2RU-1b-e5o" firstAttribute="top" secondItem="MqI-sb-m5K" secondAttribute="bottom" constant="80" id="viw-eJ-w32"/>
+                                    <constraint firstItem="GIZ-Mp-wcB" firstAttribute="leading" secondItem="Ihr-vl-5F9" secondAttribute="leading" constant="64" id="wMD-dy-qV9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ihr-vl-5F9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="0nG-gk-BcY"/>
+                            <constraint firstItem="Ihr-vl-5F9" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="22r-6S-8HJ"/>
+                            <constraint firstItem="Ihr-vl-5F9" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Sxu-Kd-WJE"/>
+                            <constraint firstAttribute="bottom" secondItem="Ihr-vl-5F9" secondAttribute="bottom" id="qwC-fq-qOw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logInPokemon" width="177.5" height="71"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
